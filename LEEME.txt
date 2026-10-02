@@ -1,0 +1,13 @@
+DEDICATORIA — I MISS YOU MY GIRL
+
+Subí al mismo repositorio de GitHub:
+- index.html
+- fondo-gatitos.png
+- tu archivo MP3
+
+Renombra el MP3 exactamente a:
+Still With You(MP3_160K).mp3
+
+La página busca ese archivo junto a index.html. Si el nombre real es diferente, cambia el src de la etiqueta <audio> en index.html. En GitHub Pages, activa Settings → Pages → Deploy from a branch → main → /(root).
+
+La música intenta comenzar cuando se toca “Toca para abrir”; esto respeta el bloqueo de reproducción automática de los navegadores móviles.

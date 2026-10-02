@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05040a"><title>I miss You my girl</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap');
+:root{--gold:#f9d99a;--bright:#fff0c8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:#fff7eb;background:#05040a;font-family:'Cormorant Garamond',Georgia,serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:linear-gradient(180deg,rgba(3,3,8,.15),rgba(3,3,8,.62)),url("fondo-gatitos.png") center 45%/cover no-repeat,#05040a;transform:scale(1.03);animation:breathe 18s ease-in-out infinite alternate}
+body:after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(180deg,rgba(2,2,7,.2),transparent 42%,rgba(2,2,7,.55))}
+@keyframes breathe{to{transform:scale(1.08)}}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(2px 2px at 12% 20%,#ffe6b2 45%,transparent 60%),radial-gradient(1px 1px at 75% 14%,#fff 45%,transparent 60%),radial-gradient(2px 2px at 86% 55%,#ffd696 45%,transparent 60%),radial-gradient(1px 1px at 28% 70%,#fff 45%,transparent 60%),radial-gradient(2px 2px at 63% 82%,#ffdaa3 45%,transparent 60%);animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.35}}
+.screen{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:30px 18px;text-align:center}
+.intro{width:min(100%,660px);margin-top:-3vh;text-shadow:0 0 18px #ffcd7d55}
+.eyebrow{color:var(--gold);font-size:.82rem;letter-spacing:.36em;text-transform:uppercase;margin-bottom:12px}
+h1{font-family:'Great Vibes',cursive;font-size:clamp(3.6rem,12vw,7rem);font-weight:400;line-height:.95;margin:0;color:var(--bright);text-shadow:0 0 10px #ffd28fbf,0 0 38px #ffb0594d}
+h1 span{display:block;font-size:.8em;margin-top:4px}.ornament{color:var(--gold);margin:25px 0 23px;letter-spacing:.65em;font-size:1.4rem}
+.open-btn{border:1px solid #ffdaa0;color:#fff0d2;background:#08050d70;border-radius:999px;padding:15px 38px;min-width:230px;font:500 1.25rem 'Cormorant Garamond',Georgia,serif;letter-spacing:.04em;box-shadow:0 0 15px #ffbe6438,inset 0 0 18px #ffbe6410;cursor:pointer;transition:.25s;backdrop-filter:blur(5px)}
+.open-btn:hover{transform:translateY(-2px);box-shadow:0 0 26px #ffbe646b}.tiny-note{margin-top:15px;color:#e8d9e2;font-size:.98rem}
+#letter{display:none;padding-top:65px;padding-bottom:90px}#letter.visible{display:flex;animation:fadein 1.3s ease both}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.letter-card{width:min(100%,760px);padding:clamp(24px,5vw,52px);border:1px solid #f8d39c57;border-radius:22px;background:#07050cbd;box-shadow:0 0 50px #0c051459,0 0 25px #e8b17114;backdrop-filter:blur(9px);text-align:left}
+.letter-card h2{font-family:'Great Vibes',cursive;font-size:clamp(2.6rem,8vw,4.2rem);color:var(--bright);font-weight:400;text-align:center;margin:0 0 8px}
+.subtitle{text-align:center;color:var(--gold);letter-spacing:.2em;font-size:.85rem;margin-bottom:28px}
+.letter-card p{font-size:clamp(1.15rem,3.5vw,1.36rem);line-height:1.72;color:#f4eaf1;margin:0 0 1.15em}
+.signoff{text-align:center;color:var(--bright)!important;font-family:'Great Vibes',cursive;font-size:2.5rem!important;margin-top:25px!important}
+.music-status{position:fixed;bottom:13px;right:13px;z-index:5;display:none}.music-status.visible{display:block}
+.music-btn{color:#ffe7bb;background:#08050dd1;border:1px solid #ffdaa075;border-radius:999px;padding:9px 14px;font:1rem 'Cormorant Garamond',Georgia,serif}
+.footer-note{text-align:center;color:#d5c2d1;font-size:1rem;margin-top:24px}
+@media(max-width:520px){body:before{background-position:center center}.screen{padding:25px 15px}.intro{margin-top:-1vh}.letter-card{border-radius:16px}.open-btn{min-width:210px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body><div class="stars" aria-hidden="true"></div>
+<main>
+<section class="screen" id="welcome" aria-label="Portada de la dedicatoria"><div class="intro">
+<div class="eyebrow">una carta para vos</div><h1>I miss You<span>my girl</span></h1>
+<div class="ornament">— ♡ —</div><button class="open-btn" id="openLetter">Toca para abrir ✦</button>
+<div class="tiny-note">Hecho con todo lo que todavía siento</div>
+</div></section>
+<section class="screen" id="letter" aria-label="Carta"><article class="letter-card">
+<h2>Para vos</h2><div class="subtitle">CON CARIÑO Y SINCERIDAD</div>
+<p>No te escribo para pedirte que vuelvas, ni para intentar cambiar el final de nuestra historia. Entiendo que lo nuestro terminó, y aunque aceptar eso no sea fácil, sé que no tengo derecho a pedirte que vuelvas a un lugar en el que quizá te hice daño.</p>
+<p>Te escribo porque hay algo que debí reconocer mucho antes: perdón por la manera en la que te amé.</p>
+<p>Perdón por las veces en las que fui un imbécil, por actuar sin pensar en cómo podían hacerte sentir mis acciones, mis decisiones y mis silencios. Perdón por haber sido tan egoísta, por mirar las cosas desde mi propia perspectiva sin detenerme a pensar en lo que vos estabas sintiendo. Por no cuidar tu corazón como merecía ser cuidado, por las veces en las que quizá te hice sentir que tus sentimientos importaban menos que los míos.</p>
+<p>No quiero justificarme. Puedo encontrar mil explicaciones para mis errores, pero ninguna de ellas borra lo que pudiste haber sentido por mi culpa. Y me duele reconocer que alguien a quien quise tanto también pudo haber encontrado tristeza en mí, cuando yo debería haber sido más cuidadoso con su corazón.</p>
+<p>No sé cuántas veces te hice daño sin darme cuenta, ni cuántas veces te guardaste cosas que yo debí haber escuchado. Tal vez nunca llegue a comprender por completo cómo viviste todo aquello, pero hoy quisiera haber tenido más empatía, más paciencia y más conciencia de que amar a alguien no consiste solamente en sentir algo por esa persona, sino también en aprender a tratarla con el cuidado, el respeto y la consideración que merece.</p>
+<p>Y no te digo esto para hacerte sentir culpable, para que tengas lástima de mí ni para que cambies de opinión sobre nosotros. No espero que estas palabras reparen lo que hice, porque sé que pedir perdón no deshace el pasado. Tampoco quiero que sintás que tenés que perdonarme para que yo pueda seguir adelante.</p>
+<p>Solamente quisiera que algún día pudieras perdonarme por haber sido tan injusto con tus sentimientos. Me pesa saber que pude lastimar a alguien que significó tanto para mí.</p>
+<p>Lo nuestro tuvo un final, y entiendo que debo respetarlo. Hay cosas que uno tiene que aceptar, incluso cuando le duelen, y perder la posibilidad de seguir compartiendo la vida con vos también significa aceptar que ya no me corresponde pedirte nada.</p>
+<p>Pero sí me corresponde reconocer mis errores. Me corresponde admitir que no siempre fui la persona que necesitabas, que hubo momentos en los que pensé demasiado en mí y demasiado poco en vos, y que quererte no me hizo automáticamente saber cómo amarte bien.</p>
+<p>Ojalá hubiera entendido algunas cosas antes. Ojalá hubiera pensado más en tu corazón y menos en mi orgullo. Ojalá hubiera sabido detenerme a tiempo para comprender que tus sentimientos también merecían espacio, cuidado y respeto.</p>
+<p>No puedo cambiar al hombre que fui en aquellos momentos, pero sí puedo hacerme responsable de él y aprender de sus errores. No para prometerte algo que ya no me corresponde prometerte, sino para no volver a tratar de esa manera a alguien que llegue a mi vida.</p>
+<p>Te amo. Perdón si no pude demostrarlo. Yo, si hubiese leído y respondido a tiempo, no te habría dejado ir. Te extraño, realmente lo hago. Extraño tus mensajes, las cosas que decías y que hacían que sonriera como tonto, tus dramas. Extraño incluso a tus gatos. Extraño todo de vos.</p>
+<p>Es increíble lo estúpido que se siente saber que lo tuviste todo, pero que, por idiota, no lo valoraste.</p>
+<p>Me veo re vulnerable escribiendo esto, pero es lo único que puedo hacer para desahogarme. Daría todo para volver desde cero y así hacer las cosas bien.</p>
+<p>Quiero que sepas que jamás me sentí con la obligación de estar con vos; realmente lo hice porque quise, porque te amé y aún lo hago. Tal vez ya no creas en mis palabras, pero lo que siento por vos es real, y por eso necesitaba escribirte todo esto.</p>
+<p class="signoff">I miss you, my girl. ♡</p><div class="footer-note">No hace falta que respondas. Solo quería que lo supieras.</div>
+</article></section></main>
+<div class="music-status" id="musicStatus"><button class="music-btn" id="musicToggle">♫ Pausar música</button></div>
+<audio id="song" preload="auto" loop><source src="Still%20With%20You%28MP3_160K%29.mp3" type="audio/mpeg"></audio>
+<script>
+const openButton=document.getElementById('openLetter'),welcome=document.getElementById('welcome'),letter=document.getElementById('letter'),song=document.getElementById('song'),musicStatus=document.getElementById('musicStatus'),musicToggle=document.getElementById('musicToggle');
+openButton.addEventListener('click',async()=>{welcome.style.display='none';letter.classList.add('visible');letter.scrollIntoView({behavior:'smooth',block:'start'});musicStatus.classList.add('visible');try{await song.play();musicToggle.textContent='♫ Pausar música'}catch(e){musicToggle.textContent='♫ Reintentar música';musicToggle.title='Comprueba que el MP3 esté subido y que su nombre coincida exactamente.'}});
+musicToggle.addEventListener('click',async()=>{if(song.paused){try{await song.play();musicToggle.textContent='♫ Pausar música'}catch(e){musicToggle.textContent='♫ Reintentar música'}}else{song.pause();musicToggle.textContent='♫ Reproducir música'}});
+song.addEventListener('error',()=>{musicToggle.textContent='♫ Revisar archivo de música';musicToggle.title='Sube el MP3 junto a index.html y comprueba que el nombre sea exacto.'});
+</script></body></html>
